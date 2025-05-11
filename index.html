@@ -1,22 +1,51 @@
 <!DOCTYPE html>
+<!-- Declara que este é um documento HTML5 -->
+
 <html lang="pt-BR">
+<!-- Define o idioma da página como português do Brasil -->
+
 <head>
   <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres como UTF-8, garantindo suporte a acentos e caracteres especiais -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Faz com que a página seja responsiva, se ajustando corretamente em dispositivos móveis -->
+
   <title>Lista de Tarefas</title>
+  <!-- Define o título da aba do navegador -->
+
   <link rel="stylesheet" href="style.css">
+  <!-- Importa o arquivo de estilos CSS externo chamado style.css -->
 </head>
+
 <body>
+  <!-- Início do corpo da página -->
+
   <div class="container">
+    <!-- Um contêiner para agrupar todos os elementos da interface -->
+
     <h1>Lista de Tarefas</h1>
+    <!-- Título principal da página -->
+
     <p>Adicione suas tarefas!</p>
-    <input type="text" id="inputTarefa" placeholder="Digite sua tarefa aqui...">
+    <!-- Texto explicativo para o usuário -->
+
+    <input type="text" name="inputTarefa" id="inputTarefa" placeholder="Digite sua tarefa aqui...">
+    <!-- Campo de entrada onde o usuário digita a nova tarefa. O id será usado no JavaScript -->
+
     <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    <!-- Botão que chama a função adicionarTarefa() quando clicado -->
+
     <p id="mensagem"></p>
+    <!-- Parágrafo vazio onde mensagens podem ser exibidas dinamicamente com JavaScript -->
+
     <ul id="listaTarefas"></ul>
+    <!-- Lista não ordenada onde as tarefas serão inseridas como itens (<li>) -->
   </div>
 
   <script src="script.js"></script>
-  
+  <!-- Importa o script JavaScript externo que contém a função adicionarTarefa() -->
+
 </body>
 </html>
+<!-- Fim do corpo da página -->
